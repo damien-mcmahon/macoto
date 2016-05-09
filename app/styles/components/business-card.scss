@@ -1,0 +1,6 @@
+$business-border-colour: #CCC;
+
+.business-card--wrapper{
+  border: 1px solid $business-border-colour;
+  margin: $APP_BASE_SPACING;
+}

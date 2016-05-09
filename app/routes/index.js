@@ -12,6 +12,6 @@ export default Ember.Route.extend({
         skype: 'macoto__'
       },
       available: true
-    }
+    };
   }
 });
