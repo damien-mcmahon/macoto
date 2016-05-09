@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "macoto.css",
 	"sources": [
-		"../../sass_compiler-input_base_path-XS9W3aqL.tmp/0/app/styles/app.scss"
+		"../../sass_compiler-input_base_path-4FDQGO4O.tmp/0/app/styles/app.scss"
 	],
 	"sourcesContent": [
 		"body {\n  margin: 0;\n  padding: 0;\n}\n"
