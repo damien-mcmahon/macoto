@@ -1,16 +1,21 @@
 <div class="business-card--wrapper">
-  <h1 class="business-card--title">{{card.title}}</h1>
-  <h2 class="business-card--position">{{card.position}}</h2>
-  <ul>
-    {{#each-in card.contact as |type contact| }}
-      <li class="business-card--contact">
-        {{fa-icon (iconName type)}}
-        {{#if (eq type 'skype')}}
-          {{contact}}
-        {{else}}
-          <a href={{contact}}>{{type}}</a>
-        {{/if}}
-      </li>
-    {{/each-in}}
-  </ul>
+  <div class="business-card--side__front">
+    <h1 class="business-card--title">{{card.title}}</h1>
+    <h2 class="business-card--position">{{card.position}}</h2>
+    <ul>
+      {{#each-in card.contact as |type contact| }}
+        <li class="business-card--contact">
+          {{fa-icon (iconName type)}}
+          {{#if (eq type 'skype')}}
+            {{contact}}
+          {{else}}
+            <a href={{contact}}>{{type}}</a>
+          {{/if}}
+        </li>
+      {{/each-in}}
+    </ul>
+  </div>
+  <div class="business-card--side__back">
+    {{link-to 'cv'}}
+  </div>
 </div>
