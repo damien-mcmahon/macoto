@@ -1,6 +1,11 @@
 @import './variables';
 @import './colours';
+
 @import 'utils/normalize';
 @import 'utils/reset';
 @import 'utils/box-sizing';
+
+@import 'pages/index';
+
 @import 'components/business-card';
+@import 'components/kanji-box';

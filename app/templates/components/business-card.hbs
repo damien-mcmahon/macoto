@@ -1,17 +1,22 @@
 <div class="business-card--wrapper">
   <div class="business-card--side__front">
-    <h1 class="business-card--title">{{card.title}}</h1>
-    <h2 class="business-card--position">{{card.position}}</h2>
-    <ul>
+    <div class="business-card--image-wrapper">
+      {{#kanji-box character="誠" furigana="まこと"}}{{/kanji-box}}
+    </div>
+    <div class="business-card--info-wrapper">
+      <h1 class="business-card--title">{{card.title}}</h1>
+      <h2 class="business-card--position">{{card.position}}</h2>
+    </div>
+    <ul class="business-card--contact-list">
       {{#each-in card.contact as |type contact| }}
-        <li class="business-card--contact">
-          {{fa-icon (iconName type)}}
-          {{#if (eq type 'skype')}}
-            {{contact}}
-          {{else}}
-            <a href={{contact}}>{{type}}</a>
-          {{/if}}
-        </li>
+      <li class="business-card--contact">
+        {{fa-icon (iconName type)}}
+        {{#if (eq type 'skype')}}
+          {{contact}}
+        {{else}}
+          <a href={{contact}}>{{type}}</a>
+        {{/if}}
+      </li>
       {{/each-in}}
     </ul>
   </div>

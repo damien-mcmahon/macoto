@@ -1,6 +1,78 @@
 $business-border-colour: #CCC;
+$business-contacts-border-colour: #EEE;
+$business-card-height: 40rem;
+$business-card-max-width: 30rem;
 
-.business-card--wrapper{
-  border: 1px solid $business-border-colour;
-  margin: $APP_BASE_SPACING;
+.business-card--wrapper {
+  position: relative;
+  width: 95%;
+  height: $business-card-height;
+  max-width: $business-card-max-width;
+  margin: $APP_BASE_SPACING auto;
+
+  .business-card--side__front,
+  .business-card--side__back {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $business-border-colour;
+    text-align: center;
+    border-radius: $APP_BORDER_RADIUS;
+  }
+
+  .business-card--side__front {
+    z-index: 10;
+  }
+
+  .business-card--side__back {
+    display: none;
+  }
+
+  .business-card--image-wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .business-card--info-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    justify-content: center;
+  }
+
+  .business-card--title,
+  .business-card--position {
+    text-transform: uppercase;
+    margin: $APP_BASE_SPACING 0;
+    width: 100%;
+  }
+
+  .business-card--contact-list {
+    display: flex;
+    width: 100%;
+    flex-basis: 4rem;
+    align-items: center;
+  }
+
+  .business-card--contact {
+    padding: ($APP_BASE_SPACING / 2);
+    margin: 0;
+    flex: 1;
+    border-left: 1px solid $business-contacts-border-colour;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    .fa {
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+  }
+
 }

@@ -1,0 +1,27 @@
+$kanji-box-kanji-size: 8rem!default;
+$kanji-box-furigana-size: .8rem!default;
+
+.kanji-box--wrapper {
+  .kanji-box--container {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .kanji-box--kanji {
+    display: block;
+    width: 100%;
+    font-size: $kanji-box-kanji-size;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .kanji-box--furigana {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: $kanji-box-furigana-size;
+    text-align: center;
+  }
+}
