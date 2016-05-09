@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "macoto.css",
+	"sources": [
+		"../../sass_compiler-input_base_path-XS9W3aqL.tmp/0/app/styles/app.scss"
+	],
+	"sourcesContent": [
+		"body {\n  margin: 0;\n  padding: 0;\n}\n"
+	],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE,GACZ",
+	"names": []
+}
