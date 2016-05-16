@@ -19,6 +19,13 @@ $business-card-location-colour: #555;
   background: $business-card-bg;
   border-radius: $APP_BORDER_RADIUS;
 
+  .availability-button--wrapper {
+    position: absolute;
+    bottom: ($APP_BASE_SPACING * 4);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .business-card--side__front,
   .business-card--side__back {
     display: inline-flex;

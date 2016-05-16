@@ -1,0 +1,29 @@
+$availability-button-available-colour: rgba(#0A0, .8);
+$availability-button-unavailable-colour: rgba(#A00, .8);
+$availability-button-colour: #FFF;
+
+.availability-button--wrapper {
+  color:$availability-button-colour;
+  background: $availability-button-unavailable-colour;
+  width: auto;
+  display: inline-block;
+  padding: ($APP_BASE_SPACING / 4) ($APP_BASE_SPACING / 2);
+  border-radius: ($APP_BORDER_RADIUS * 2);
+  font-size: 1rem;
+  opacity: .5;
+
+  .is-available & {
+    opacity: .8;
+    background: $availability-button-available-colour;
+  }
+
+  .availability-button--status{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    line-height: 1.5;
+    color: $availability-button-colour;
+  }
+}

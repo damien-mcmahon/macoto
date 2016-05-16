@@ -1,7 +1,8 @@
 <div class="business-card--wrapper">
   <div class="business-card--side__front">
+    {{#availability-button available=card.available}}{{/availability-button}}
     <div class="business-card--image-wrapper">
-      {{#kanji-box character="誠" furigana="まこと"}}{{/kanji-box}}
+      {{kanji-box character="誠" furigana="まこと"}}
     </div>
     <div class="business-card--info-wrapper">
       <h1 class="business-card--title">{{card.title}}</h1>
