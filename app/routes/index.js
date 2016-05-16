@@ -12,7 +12,8 @@ export default Ember.Route.extend({
         linkedIn: 'https://www.linkedin.com/in/damienmcmahon',
         skype: 'macoto__'
       },
-      available: true
+      available: true,
+      keitei: 'ゼロ七五九六四八七一五六'
     };
   }
 });
