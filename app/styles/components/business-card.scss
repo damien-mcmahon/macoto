@@ -1,14 +1,19 @@
 $business-border-colour: #CCC;
 $business-contacts-border-colour: #EEE;
 $business-card-height: 40rem;
+$business-card-min-width: 30rem;
 $business-card-max-width: 30rem;
+$business-card-bg: #FFF;
 
 .business-card--wrapper {
   position: relative;
   width: 95%;
   height: $business-card-height;
+  min-width: $business-card-min-width;
   max-width: $business-card-max-width;
   margin: $APP_BASE_SPACING auto;
+  background: $business-card-bg;
+  border-radius: $APP_BORDER_RADIUS;
 
   .business-card--side__front,
   .business-card--side__back {

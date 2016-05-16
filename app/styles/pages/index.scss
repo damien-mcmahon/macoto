@@ -1,2 +1,24 @@
 $kanji-box-kanji-size: 15rem;
-#index-page {}
+$index-bg-start: #DA0000;
+$index-bg-end: darken($index-bg-start, 5%);
+$business-card-shadow-colour: rgba(#000, .2);
+
+#index-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(180deg, $index-bg-start, $index-bg-end);
+  justify-content: center;
+
+  .business-card--wrapper {
+    &:hover {
+      box-shadow:
+        5px 5px 5px $business-card-shadow-colour,
+        -5px 5px 5px $business-card-shadow-colour;
+    }
+  }
+
+}

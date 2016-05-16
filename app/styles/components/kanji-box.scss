@@ -1,5 +1,7 @@
 $kanji-box-kanji-size: 8rem!default;
-$kanji-box-furigana-size: .8rem!default;
+$kanji-box-furigana-size: 1rem!default;
+$kanji-box-furigana-color: #BBB;
+$kanji-box-furigana-spacing: .5em;
 
 .kanji-box--wrapper {
   .kanji-box--container {
@@ -23,5 +25,7 @@ $kanji-box-furigana-size: .8rem!default;
     padding: 0;
     font-size: $kanji-box-furigana-size;
     text-align: center;
+    color:$kanji-box-furigana-color;
+    letter-spacing: $kanji-box-furigana-spacing;
   }
 }
