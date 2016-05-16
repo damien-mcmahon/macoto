@@ -5,9 +5,10 @@ export default Ember.Route.extend({
     return {
       title: 'Damien McMahon',
       position: 'Frontend Developer',
+      location: 'London, UK',
       contact: {
         github: 'https://www.github.com/damien-mcmahon',
-        twitter: 'https://www.twitter.com/damien-m',
+        twitter: 'https://www.twitter.com/damien_m',
         linkedIn: 'https://www.linkedin.com/in/damienmcmahon',
         skype: 'macoto__'
       },

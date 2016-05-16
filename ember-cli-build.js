@@ -8,10 +8,6 @@ module.exports = function(defaults) {
     autoprefixer: {
       browsers: ['last 2 versions'],
       cascade: false
-    },
-    'ember-font-awesome': {
-      includeFontAwesomeAssets: false,
-      includeFontFiles: false
     }
   });
 

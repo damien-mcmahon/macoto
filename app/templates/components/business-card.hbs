@@ -6,6 +6,7 @@
     <div class="business-card--info-wrapper">
       <h1 class="business-card--title">{{card.title}}</h1>
       <h2 class="business-card--position">{{card.position}}</h2>
+      <h3 class="business-card--location">{{card.location}}</h3>
     </div>
     <ul class="business-card--contact-list">
       {{#each-in card.contact as |type contact| }}
@@ -14,7 +15,7 @@
         {{#if (eq type 'skype')}}
           {{contact}}
         {{else}}
-          <a href={{contact}}>{{type}}</a>
+          <a href={{contact}} target="_blank">{{type}}</a>
         {{/if}}
       </li>
       {{/each-in}}
